@@ -14,8 +14,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-const char* ssid     = "KCCI_STC_S";
-const char* password = "kcci098#";
+const char* ssid     = "printer_room_asus";
+const char* password = "134625wo";
 String host = "http://cloud.park-cloud.co19.kr/project";
 String sta, R, G, B;
 int count = 0;

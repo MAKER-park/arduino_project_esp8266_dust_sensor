@@ -55,14 +55,15 @@ public class MainActivity extends AppCompatActivity {
         image_id1 = findViewById(R.id.image_id1);//미세먼지 기준 배경 이미지
         image_id2 = findViewById(R.id.image_id2);//RGB button
 
+
         Handler text_changer = new Handler() {
             public void handleMessage(Message msg) {
 
-                if (status.equals("ON")) {
-                    image_id1.setVisibility(View.VISIBLE);
-                }else{
-                    image_id1.setVisibility(View.INVISIBLE);
-                }
+                text_id1.setText(String.valueOf(temp)+" °C");
+                text_id2.setText(String.valueOf(hum)+" %");
+                text_id3.setText(String.valueOf(dust2)+" ㎍/㎥");
+
+                //text_id1.setText(temp);
             }
         };
 
@@ -117,20 +118,20 @@ public class MainActivity extends AppCompatActivity {
 
 
                     //원하는 행의 데이터를 받아오는 곳 시간과 합쳐서 사용합니다.
-//                    String time = data.get(0).getTime();
+                    String time = data.get(0).getTime();
 //                    status = data.get(0).getAge();
-//                    temp = data.get(0).getTemp();
-//                    hum = data.get(0).getHum();
-//                    dust1 = data.get(0).getDust();
-//                    dust2 = data.get(0).getDust2();
-//                    dust3 = data.get(0).getDust3();
-//                    System.out.println("temp! : " + String.valueOf(temp));
-//                    System.out.println("hum! : " + String.valueOf(hum));
-//                    System.out.println("pm1.0! : " + String.valueOf(dust1));
-//                    System.out.println("pm2.5! : " + String.valueOf(dust2));
-//                    System.out.println("pm10! : " + String.valueOf(dust3));
+                    temp = data.get(0).getTemp();
+                    hum = data.get(0).getHum();
+                    dust1 = data.get(0).getDust();
+                    dust2 = data.get(0).getDust2();
+                    dust3 = data.get(0).getDust3();
+                    System.out.println("temp! : " + String.valueOf(temp));
+                    System.out.println("hum! : " + String.valueOf(hum));
+                    System.out.println("pm1.0! : " + String.valueOf(dust1));
+                    System.out.println("pm2.5! : " + String.valueOf(dust2));
+                    System.out.println("pm10! : " + String.valueOf(dust3));
 
-                    //text_changer.obtainMessage(1).sendToTarget(); //ui 변경 핸들러 호출
+                    text_changer.obtainMessage(1).sendToTarget(); //ui 변경 핸들러 호출
 
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
@@ -142,6 +143,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         };//DB 업데이트 타이머 구문의 끝
-        timer.schedule(TT, 0, 30000); //Timer 실행
+        timer.schedule(TT, 0, 1000); //Timer 실행
     }
 }
