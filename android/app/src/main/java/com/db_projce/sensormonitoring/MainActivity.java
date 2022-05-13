@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     dust1 = data.get(0).getDust();
                     dust2 = data.get(0).getDust2();
                     dust3 = data.get(0).getDust3();
+                    System.out.println("time! : " + time);
                     System.out.println("temp! : " + String.valueOf(temp));
                     System.out.println("hum! : " + String.valueOf(hum));
                     System.out.println("pm1.0! : " + String.valueOf(dust1));
