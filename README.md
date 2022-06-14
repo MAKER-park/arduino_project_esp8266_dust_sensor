@@ -12,7 +12,8 @@
 ![Alt text](/image/2.PNG)
 
 ## DB
-![Alt text](/image/view 페이지 2.PNG)
+![Alt text](/image/view_page2.PNG)
+
 you can check this link!
 http://cloud.park-cloud.co19.kr/project/view2.php
 
