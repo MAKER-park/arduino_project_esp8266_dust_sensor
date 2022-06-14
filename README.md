@@ -4,6 +4,9 @@
  http get communication
  mysql_update
  
+ ## video clip
+ https://youtu.be/psb1WZwCy9o
+ 
  
 ## function
  ![Alt text](/image/1.PNG)
