@@ -1,7 +1,10 @@
 ## arduino_project_esp8266_dust_sensor
  22.04_project
+ 
  use arduino esp8266 (wemos D1 mini)
+ 
  http get communication
+ 
  mysql_update
  
  ## video clip
@@ -38,6 +41,9 @@ you can use free stl file!!
 
 ## use part
 esp8266 : wemos D1 mini : https://www.devicemart.co.kr/goods/view?no=1327519
+
 nextion display (4.3 inch) : https://www.devicemart.co.kr/goods/view?no=1272067 
+
 PM2008M dust sensor : https://www.devicemart.co.kr/goods/view?no=12240662
+
 ws2812b : https://www.devicemart.co.kr/goods/view?no=1328620
